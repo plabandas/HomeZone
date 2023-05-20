@@ -3,18 +3,22 @@
 #include<fstream>
 #include<stdlib.h>
 #include<string.h>
+
+#include "Land_Rent.cpp"
+
 using namespace std;
 
 void calling_loging_class();
 
-class Login_sign_UP
+class Login_sign_UP            // Class Used
 {
+    int count;
+    string user,pass,u,p;        // Encapsulation Used
 public:
 
-    void login()
+    void login()                  // Member Function Used
     {
-        int count;
-        string user,pass,u,p;
+
         system("cls");
         cout<<"Please enter the following details ::"<<endl;
         cout<<"USERNAME : ";
@@ -36,10 +40,40 @@ public:
         if(count==1)
         {
             cout<<"**********Hello "<<user<<"*********\n*****LOGIN SUCESS*****\n***Thanks for logging in***\n";
-            cin.get();
-            cin.get();
 
-            calling_loging_class();
+            cout << endl << endl;
+            cout << "What do you want ?? "<< endl;
+            cout << "1. Do you want to buy land ?" << endl;
+            cout << "2. OR !! Do you want to rent a house ?" << endl;
+            int flag;
+            cin >> flag;
+
+            if(flag==1)
+            {
+                Buying_Land land;
+                land.choose_country_Buying_Land();
+            }
+            else if(flag == 2)
+            {
+                House_Rent land;
+                land.choose_country_House_Rent();
+            }
+            else
+            {
+                cout << "Wrong Input !!!!"<< endl << "Want to Login Again ? ==> ";
+                int k;
+                cin >> k;
+                if(k)
+                {
+                    login();
+                }
+                else
+                {
+                    exit(-1);
+                }
+
+
+            }
         }
         else
         {
@@ -109,6 +143,7 @@ public:
             }
             else
             {
+                system("cls");
                 cout<<"\nSorry, Your userID is not found in our database\n";
                 cout<<"\nPlease kindly contact to Admin Of this App(Plaban Das -> 2007111)\n";
                 cin.get();
@@ -146,6 +181,7 @@ public:
             }
             else
             {
+                system("cls");
                 cout<<"Sorry, We cannot found your password in our database \n";
                 cout<<"\nPlease kindly contact to Admin Of this App(Plaban Das -> 2007111)\n";
                 cin.get();
@@ -206,11 +242,5 @@ void calling_loging_class()
         cout<<"You've made a mistake , give it a try again\n"<<endl;
         cout << "Want To Go Back ?? ::(1 for YES , 0 for NO) ::  ";
     }
-
-}
-
-main()
-{
-    calling_loging_class();
 
 }
