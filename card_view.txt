@@ -1,0 +1,2 @@
+11. Barishal         Location-> Kawnia          Area_Sq-ft-> 1800        Price-> 115000
+18. Rajshahi         Location-> Dewanpara       Area_Sq-ft-> 3500        Price-> 155000
