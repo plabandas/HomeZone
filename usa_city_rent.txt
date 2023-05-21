@@ -1,1 +1,7 @@
-Usa City Rent
+
+*************************Land Buying**********************
+************Three Cities Of USA in Our Service************
+
+1. Wisconsin, USA           Location-> Green Bay             House_Rent-> $4400
+2. California, USA          Location-> San Francisco         House_Rent-> $2400
+3. New York, USA            Location-> New York              House_Rent-> $3800

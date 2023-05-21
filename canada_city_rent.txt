@@ -1,1 +1,7 @@
-Canada City Rent
+
+*************************Land Buying*************************
+************Three Cities Of Canada in Our Service************
+
+1. Ontario, Canada           Location-> Toronto           House_Rent-> $4500
+2. Saskatchewan, Canada      Location-> Saskatoon         House_Rent> $2500
+3. Quebec, Canada            Location-> Montreal          House_Rent-> $3500

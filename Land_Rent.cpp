@@ -10,8 +10,8 @@ using namespace std;
 class DashBoard
 {
 
-    char line[60];
-    int N = 80;
+    char line[600];
+    int N = 800;
 public:
     void choose_country()
     {
@@ -49,8 +49,8 @@ public:
 
 class Buying_Land : public DashBoard // Inheritance Used
 {
-    char line[80];
-    int N=100;
+    char line[800];
+    int N=1000;
     int city_pos;
 
 public:
@@ -116,8 +116,8 @@ public:
 
 class House_Rent : public DashBoard
 {
-    char line[60];
-    int N = 80;
+    char line[600];
+    int N = 800;
     int city_pos;
 public:
     void choose_country_House_Rent()

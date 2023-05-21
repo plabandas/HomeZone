@@ -1,1 +1,35 @@
-Bangladesh City Rent
+
+**********************************House Rent**************************************
+************Our service is now available in only division cities of BD************
+
+1. Dhaka            Location-> Shayamoli       House_Rent-> 45000
+2. Dhaka            Location-> Gulshan         House_Rent-> 25000
+3. Dhaka            Location-> Dhanmondi       House_Rent-> 35000
+
+4. Khulna           Location-> Shiromoni       House_Rent->  9000
+5. Khulna           Location-> Gallamari       House_Rent-> 14000
+6. Khulna           Location-> KUET            House_Rent-> 19000
+
+7. Sylhet           Location-> Daudpur         House_Rent-> 23000
+8. Sylhet           Location-> Kazirkhola      House_Rent-> 11000
+9. Sylhet           Location-> Gotatikor       House_Rent->  9000
+
+10. Barishal         Location-> Sagardi         House_Rent-> 17000
+11. Barishal         Location-> Kawnia          House_Rent-> 11500
+12. Barishal         Location-> Chahutpur       House_Rent-> 12000
+
+13. Chattogram       Location-> Halishahar      House_Rent-> 21000
+14. Chattogram       Location-> Ichanagar       House_Rent-> 22500
+15. Chattogram       Location-> Bakalia         House_Rent-> 23500
+
+16. Rajshahi         Location-> Rajpara         House_Rent-> 13500
+17. Rajshahi         Location-> Bosua           House_Rent-> 14500
+18. Rajshahi         Location-> Dewanpara       House_Rent-> 15500
+
+19. Rangpur          Location-> Shatgara        House_Rent->  8500
+20. Rangpur          Location-> Ranpara         House_Rent->  9500
+21. Rangpur          Location-> Tapodhan        House_Rent->  7500
+
+22. Mymensingh       Location-> Dapunia        House_Rent->  10500
+23. Mymensingh       Location-> Baruri         House_Rent->  11300
+24. Mymensingh       Location-> Shopnel        House_Rent->  12300

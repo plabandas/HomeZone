@@ -1,1 +1,35 @@
-Bangladesh City Land
+
+***************************************Land Buying********************************
+************Our service is now available in only division cities of BD************
+
+1. Dhaka            Location-> Shayamoli       Area_Sq-ft-> 1500         Price-> 450000
+2. Dhaka            Location-> Gulshan         Area_Sq-ft-> 1600         Price-> 250000
+3. Dhaka            Location-> Dhanmondi       Area_Sq-ft-> 1100         Price-> 350000
+
+4. Khulna           Location-> Shiromoni       Area_Sq-ft-> 2500         Price->  90000
+5. Khulna           Location-> Gallamari       Area_Sq-ft-> 1300         Price-> 140000
+6. Khulna           Location-> KUET            Area_Sq-ft-> 3500         Price-> 190000
+
+7. Sylhet           Location-> Daudpur         Area_Sq-ft-> 900          Price-> 230000
+8. Sylhet           Location-> Kazirkhola      Area_Sq-ft-> 1000         Price-> 110000
+9. Sylhet           Location-> Gotatikor       Area_Sq-ft-> 800          Price->  90000
+
+10. Barishal         Location-> Sagardi         Area_Sq-ft-> 1900        Price-> 170000
+11. Barishal         Location-> Kawnia          Area_Sq-ft-> 1800        Price-> 115000
+12. Barishal         Location-> Chahutpur       Area_Sq-ft-> 1650        Price-> 120000
+
+13. Chattogram       Location-> Halishahar      Area_Sq-ft-> 1200        Price-> 210000
+14. Chattogram       Location-> Ichanagar       Area_Sq-ft-> 1400        Price-> 225000
+15. Chattogram       Location-> Bakalia         Area_Sq-ft-> 1550        Price-> 235000
+
+16. Rajshahi         Location-> Rajpara         Area_Sq-ft-> 1400        Price-> 135000
+17. Rajshahi         Location-> Bosua           Area_Sq-ft-> 1500        Price-> 145000
+18. Rajshahi         Location-> Dewanpara       Area_Sq-ft-> 3500        Price-> 155000
+
+19. Rangpur          Location-> Shatgara        Area_Sq-ft-> 2500        Price->  85000
+20. Rangpur          Location-> Ranpara         Area_Sq-ft-> 1300        Price->  95000
+21. Rangpur          Location-> Tapodhan        Area_Sq-ft-> 1080        Price->  75000
+
+22. Mymensingh       Location-> Dapunia        Area_Sq-ft->  1440        Price->  105000
+23. Mymensingh       Location-> Baruri         Area_Sq-ft->  1550        Price->  113000
+24. Mymensingh       Location-> Shopnel        Area_Sq-ft->  1660        Price->  123000

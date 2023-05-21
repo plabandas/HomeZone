@@ -45,6 +45,7 @@ public:
             cout << "What do you want ?? "<< endl;
             cout << "1. Do you want to buy land ?" << endl;
             cout << "2. OR !! Do you want to rent a house ?" << endl;
+            cout << "Give your choice :: ";
             int flag;
             cin >> flag;
 
