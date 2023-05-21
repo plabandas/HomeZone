@@ -1,3 +1,2 @@
-13. Chattogram       Location-> Halishahar      House_Rent-> 21000
-15. Chattogram       Location-> Bakalia         House_Rent-> 23500
-14. Chattogram       Location-> Ichanagar       House_Rent-> 22500
+2. Saskatchewan, Canada      Location-> Saskatoon         Area_Sq-ft-> 1600         Price-> $250000
+3. Quebec, Canada            Location-> Montreal          Area_Sq-ft-> 1100         Price-> $350000
