@@ -1,2 +1,3 @@
-11. Barishal         Location-> Kawnia          Area_Sq-ft-> 1800        Price-> 115000
-18. Rajshahi         Location-> Dewanpara       Area_Sq-ft-> 3500        Price-> 155000
+13. Chattogram       Location-> Halishahar      House_Rent-> 21000
+15. Chattogram       Location-> Bakalia         House_Rent-> 23500
+14. Chattogram       Location-> Ichanagar       House_Rent-> 22500

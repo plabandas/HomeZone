@@ -611,11 +611,9 @@ public:
         while(out)
         {
             counter++;
+            out.getline(line,N);
             if(counter == flag)
             {
-                out.getline(line,N);
-
-
 
                 out_invoice << "*************************Welcome To HomeZone*************************" << endl;
                 out_invoice << "*******************Our Dream to make your life EASY******************" << endl << endl;
