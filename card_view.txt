@@ -1,2 +1,3 @@
-2. Saskatchewan, Canada      Location-> Saskatoon         Area_Sq-ft-> 1600         Price-> $250000
-3. Quebec, Canada            Location-> Montreal          Area_Sq-ft-> 1100         Price-> $350000
+3. Quebec, Canada            Location-> Montreal          House_Rent-> $3500
+2. Saskatchewan, Canada      Location-> Saskatoon         House_Rent> $2500
+1. Ontario, Canada           Location-> Toronto           House_Rent-> $4500

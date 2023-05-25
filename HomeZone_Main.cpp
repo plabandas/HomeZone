@@ -4,22 +4,15 @@ Name :: Plaban Das
 Department :: CSE
 */
 
-#include <iostream>
+////////////////////////////////////////////////////// Overview Video Link :: (( https://youtu.be/zoeeQwyyk_g  ))
+
 #include <bits/stdc++.h>
-#include <istream>
-#include <fstream>
-#include <stdlib.h>
 #include <string.h>
 
 
 using namespace std;
 bool state_of_cart=true;
 string Name_customer = "";
-
-
-
-class Buying_Land;
-
 
 class Card_view_Adding
 {
@@ -553,9 +546,10 @@ void calling_loging_class()
     Login_sign_UP obj;
 
     int choice;
-    cout<<"***********************************************************************\n\n\n";
+    cout<<"***********************************************************************\n\n";
     cout<<"                      Welcome to login page                               \n\n";
-    cout<<"*******************        MENU        *******************************\n\n";
+    cout<<"                         ** HomeZone **                                     \n\n";
+    cout<<"*****************************************************************************\n\n";
     cout<<"1.LOGIN"<<endl;
     cout<<"2.REGISTER"<<endl;
     cout<<"3.FORGOT PASSWORD (or) USERNAME"<<endl;
