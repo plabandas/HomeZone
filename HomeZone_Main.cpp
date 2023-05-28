@@ -13,13 +13,15 @@ Department :: CSE
 using namespace std;
 bool state_of_cart=true;
 string Name_customer = "";
+inline void function_for_some();
 
 class Card_view_Adding
 {
+private:
     char line[600];
     int N = 800;
 public:
-    void added_to_cart(int flag,string what_file)
+    int added_to_cart(int flag,string what_file)
     {
         int counter=0,c_ter=0;
         ifstream fout;
@@ -69,12 +71,13 @@ public:
                 {
                     if(state_of_cart)
                     {
-                        state_of_cart = false;
+                        state_of_cart = false;         // New vabe cart toiri hoscca
                         ofstream card_view("card_view.txt",ios::out);
                         card_view<<line<<endl;
                     }
                     else
                     {
+                        //Cart a append korcha
                         ofstream card_view("card_view.txt",ios::app);
                         card_view<<line<<endl;
                     }
@@ -88,11 +91,7 @@ public:
         }
         else
         {
-            while (fout)
-            {
-                fout.getline(line, N);
-                cout << line << endl;
-            }
+            return -1000; // Flow of control backing
         }
 
 
@@ -108,16 +107,16 @@ public:
             if(a==1)
             {
                 system("cls");
-                added_to_cart(0,what_file);
+                return a;
             }
             else if(a==0)
             {
-                return;
+                return a;
             }
             else
             {
                 cout << "Wrong Input " << endl;
-                return;
+                return -199;
             }
 
         }
@@ -204,7 +203,10 @@ public:
             cin >> city_pos;
 
             Card_view_Adding card_view;
-            card_view.added_to_cart(city_pos,"bangladesh_city_land.txt");
+
+            int state = card_view.added_to_cart(city_pos,"bangladesh_city_land.txt");
+            if(state == 1)
+                function_for_some();  // Again Launching
 
             fout.close();
 
@@ -223,7 +225,9 @@ public:
             cin >> city_pos;
 
             Card_view_Adding card_view;
-            card_view.added_to_cart(city_pos,"usa_city_land.txt");
+            int state = card_view.added_to_cart(city_pos,"usa_city_land.txt");
+            if(state == 1)
+                function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -241,7 +245,9 @@ public:
             cin >> city_pos;
 
             Card_view_Adding card_view;
-            card_view.added_to_cart(city_pos,"canada_city_land.txt");
+            int state = card_view.added_to_cart(city_pos,"canada_city_land.txt");
+            if(state == 1)
+            function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -285,7 +291,9 @@ public:
             cin >> city_pos;
 
             Card_view_Adding card_view;
-            card_view.added_to_cart(city_pos,"bangladesh_city_rent.txt");
+            int state = card_view.added_to_cart(city_pos,"bangladesh_city_rent.txt");
+            if(state == 1)
+            function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -304,7 +312,9 @@ public:
             cin >> city_pos;
 
             Card_view_Adding card_view;
-            card_view.added_to_cart(city_pos,"usa_city_rent.txt");
+            int state = card_view.added_to_cart(city_pos,"usa_city_rent.txt");
+            if(state == 1)
+            function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -323,7 +333,9 @@ public:
             cin >> city_pos;
 
             Card_view_Adding card_view;
-            card_view.added_to_cart(city_pos,"canada_city_rent.txt");
+            int state = card_view.added_to_cart(city_pos,"canada_city_rent.txt");
+            if(state == 1)
+            function_for_some();  // Again Launching
 
             fout.close();
 
@@ -342,6 +354,7 @@ public:
 
 void calling_loging_class();
 
+
 class Login_sign_UP            // Class Used
 {
     int count;
@@ -350,7 +363,6 @@ public:
 
     void login()                  // Member Function Used
     {
-
         system("cls");
         cout<<"Please enter the following details ::"<<endl;
         cout<<"USERNAME : ";
@@ -375,39 +387,8 @@ public:
             Name_customer = user;
 
             cout << endl << endl;
-            cout << "What do you want ?? "<< endl;
-            cout << "1. Do you want to buy land ?" << endl;
-            cout << "2. OR !! Do you want to rent a house ?" << endl;
-            cout << "Give your choice :: ";
-            int flag;
-            cin >> flag;
+            function_for_some();
 
-            if(flag==1)
-            {
-                Buying_Land land;
-                land.choose_country_Buying_Land();
-            }
-            else if(flag == 2)
-            {
-                House_Rent land;
-                land.choose_country_House_Rent();
-            }
-            else
-            {
-                cout << "Wrong Input !!!!"<< endl << "Want to Login Again ? ==> ";
-                int k;
-                cin >> k;
-                if(k)
-                {
-                    login();
-                }
-                else
-                {
-                    exit(-1);
-                }
-
-
-            }
         }
         else
         {
@@ -549,7 +530,7 @@ void calling_loging_class()
     cout<<"***********************************************************************\n\n";
     cout<<"                      Welcome to login page                               \n\n";
     cout<<"                         ** HomeZone **                                     \n\n";
-    cout<<"*****************************************************************************\n\n";
+    cout<<"***********************************************************************\n\n";
     cout<<"1.LOGIN"<<endl;
     cout<<"2.REGISTER"<<endl;
     cout<<"3.FORGOT PASSWORD (or) USERNAME"<<endl;
@@ -580,6 +561,42 @@ void calling_loging_class()
 
 }
 
+inline void function_for_some()
+{
+
+    cout << "What do you want ?? "<< endl;
+    cout << "1. Do you want to buy land ?" << endl;
+    cout << "2. OR !! Do you want to rent a house ?" << endl;
+    cout << "Give your choice :: ";
+    int flag;
+    cin >> flag;
+
+    if(flag==1)
+    {
+        Buying_Land land;
+        land.choose_country_Buying_Land();
+    }
+    else if(flag == 2)
+    {
+        House_Rent land;
+        land.choose_country_House_Rent();
+    }
+    else
+    {
+        cout << "Wrong Input !!!!"<< endl << "Want to Login Again ? ==> ";
+        int k;
+        cin >> k;
+        if(k)
+        {
+            Login_sign_UP logs;
+            logs.login();
+        }
+        else
+        {
+            exit(-1);
+        }
+    }
+}
 
 class Make_invoice
 {
@@ -659,6 +676,27 @@ public:
         int flag;
         cin >> flag;
         make_invoice_ready(flag);
+    }
+
+};
+
+int items=0;
+int total_cost_dollars = 0;
+int total_cost_taka = 0;
+
+class cart_operation
+{
+public:
+    void set_items(int a)
+    {
+        items = items + 1;
+    }
+    void set_item_imounts(int dollars, int taka)
+    {
+        total_cost_dollars = total_cost_dollars + dollars;
+        total_cost_taka = total_cost_taka + taka;
+    }
+    void sort_elements_with_money(){
     }
 
 };
