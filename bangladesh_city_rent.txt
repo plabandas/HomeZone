@@ -2,34 +2,34 @@
 **********************************House Rent**************************************
 ************Our service is now available in only division cities of BD************
 
-1. Dhaka            Location-> Shayamoli       House_Rent-> 45000
-2. Dhaka            Location-> Gulshan         House_Rent-> 25000
-3. Dhaka            Location-> Dhanmondi       House_Rent-> 35000
+1. Dhaka            Location-> Shayamoli       House_Rent-> USD 450
+2. Dhaka            Location-> Gulshan         House_Rent-> USD 250
+3. Dhaka            Location-> Dhanmondi       House_Rent-> USD 350
 
-4. Khulna           Location-> Shiromoni       House_Rent->  9000
-5. Khulna           Location-> Gallamari       House_Rent-> 14000
-6. Khulna           Location-> KUET            House_Rent-> 19000
+4. Khulna           Location-> Shiromoni       House_Rent-> USD 90
+5. Khulna           Location-> Gallamari       House_Rent-> USD 140
+6. Khulna           Location-> KUET            House_Rent-> USD 190
 
-7. Sylhet           Location-> Daudpur         House_Rent-> 23000
-8. Sylhet           Location-> Kazirkhola      House_Rent-> 11000
-9. Sylhet           Location-> Gotatikor       House_Rent->  9000
+7. Sylhet           Location-> Daudpur         House_Rent-> USD 230
+8. Sylhet           Location-> Kazirkhola      House_Rent-> USD 110
+9. Sylhet           Location-> Gotatikor       House_Rent-> USD 900
 
-10. Barishal         Location-> Sagardi         House_Rent-> 17000
-11. Barishal         Location-> Kawnia          House_Rent-> 11500
-12. Barishal         Location-> Chahutpur       House_Rent-> 12000
+10. Barishal         Location-> Sagardi         House_Rent-> USD 170
+11. Barishal         Location-> Kawnia          House_Rent-> USD 115
+12. Barishal         Location-> Chahutpur       House_Rent-> USD 120
 
-13. Chattogram       Location-> Halishahar      House_Rent-> 21000
-14. Chattogram       Location-> Ichanagar       House_Rent-> 22500
-15. Chattogram       Location-> Bakalia         House_Rent-> 23500
+13. Chattogram       Location-> Halishahar      House_Rent-> USD 210
+14. Chattogram       Location-> Ichanagar       House_Rent-> USD 225
+15. Chattogram       Location-> Bakalia         House_Rent-> USD 235
 
-16. Rajshahi         Location-> Rajpara         House_Rent-> 13500
-17. Rajshahi         Location-> Bosua           House_Rent-> 14500
-18. Rajshahi         Location-> Dewanpara       House_Rent-> 15500
+16. Rajshahi         Location-> Rajpara         House_Rent-> USD 135
+17. Rajshahi         Location-> Bosua           House_Rent-> USD 145
+18. Rajshahi         Location-> Dewanpara       House_Rent-> USD 155
 
-19. Rangpur          Location-> Shatgara        House_Rent->  8500
-20. Rangpur          Location-> Ranpara         House_Rent->  9500
-21. Rangpur          Location-> Tapodhan        House_Rent->  7500
+19. Rangpur          Location-> Shatgara        House_Rent-> USD 85
+20. Rangpur          Location-> Ranpara         House_Rent-> USD 95
+21. Rangpur          Location-> Tapodhan        House_Rent-> USD 75
 
-22. Mymensingh       Location-> Dapunia        House_Rent->  10500
-23. Mymensingh       Location-> Baruri         House_Rent->  11300
-24. Mymensingh       Location-> Shopnel        House_Rent->  12300
+22. Mymensingh       Location-> Dapunia        House_Rent->  USD 105
+23. Mymensingh       Location-> Baruri         House_Rent->  USD 113
+24. Mymensingh       Location-> Shopnel        House_Rent->  USD 123

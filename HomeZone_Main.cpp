@@ -247,7 +247,7 @@ public:
             Card_view_Adding card_view;
             int state = card_view.added_to_cart(city_pos,"canada_city_land.txt");
             if(state == 1)
-            function_for_some();  // Again Launching
+                function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -293,7 +293,7 @@ public:
             Card_view_Adding card_view;
             int state = card_view.added_to_cart(city_pos,"bangladesh_city_rent.txt");
             if(state == 1)
-            function_for_some();  // Again Launching
+                function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -314,7 +314,7 @@ public:
             Card_view_Adding card_view;
             int state = card_view.added_to_cart(city_pos,"usa_city_rent.txt");
             if(state == 1)
-            function_for_some();  // Again Launching
+                function_for_some();  // Again Launching
 
             fout.close();
         }
@@ -335,7 +335,7 @@ public:
             Card_view_Adding card_view;
             int state = card_view.added_to_cart(city_pos,"canada_city_rent.txt");
             if(state == 1)
-            function_for_some();  // Again Launching
+                function_for_some();  // Again Launching
 
             fout.close();
 
@@ -665,12 +665,23 @@ public:
 
         ifstream out_card;
         out_card.open("card_view.txt");
+        cout << endl;
         while(out_card)
         {
             product_id++;
             out_card.getline(line,N);
-            cout << "Product ID: "<<product_id<< " Item :: "<< line << endl;
+
+            int k = (int)line[0] ;
+
+            if( k != 0)     // Last item filtered
+            {
+                cout<< "Product ID: "<<product_id<< " Item :: "<< line << endl;
+            }
+
+
+
         }
+        cout << endl;
         out_card.close();
         cout << "Select Your Final Item **With Product ID** :: ";
         int flag;
@@ -680,39 +691,77 @@ public:
 
 };
 
-int items=0;
-int total_cost_dollars = 0;
-int total_cost_taka = 0;
+int items_count = 0;
+static int total_cost_dollars = 0;
+
+template<typename P>
+void calculation_of_dolars(P a)
+{
+    total_cost_dollars =  total_cost_dollars + a;
+}
+
+template<typename R>
+void calculation_of_items(R a)
+{
+    items_count =  items_count + a;
+}
+
 
 class cart_operation
 {
 public:
-    void set_items(int a)
+    void calculate_total_cost()
     {
-        items = items + 1;
+        int counter = 1;
+        ifstream input("card_view.txt");
+        bool flag2 = false;
+        string str;
+        while(input >> str)
+        {
+            if(str == "USD")
+            {
+                flag2 = true;
+            }
+            else if(flag2 == true)
+            {
+
+                flag2 = false;
+                int val = stoi(str);
+
+                calculation_of_dolars(val); // using template
+                calculation_of_items(counter); // using template
+            }
+
+        }
     }
-    void set_item_imounts(int dollars, int taka)
+    void sort_elements_with_money()
     {
-        total_cost_dollars = total_cost_dollars + dollars;
-        total_cost_taka = total_cost_taka + taka;
-    }
-    void sort_elements_with_money(){
     }
 
 };
 
 
+
+
 int main()
 {
-    calling_loging_class();
+    //calling_loging_class();
 
     system("cls");
 
     cout << "Do you want to watch final cart items ? (1 for YES , 0 for NO) :: " ;
+
+    cart_operation cart_operation;
+    cart_operation.calculate_total_cost();
+
     int flag;
     cin >> flag;
     if(flag == 1)
     {
+        cout << endl << "Your Total Items On Cart : " << items_count << endl;
+        cout << "Your Value Of Those Items In USD : " << total_cost_dollars << " Dollars...." << endl;
+
+
         Make_invoice invoice(0,1000);         //constructor used
         invoice.make_invoice();
     }
@@ -720,4 +769,9 @@ int main()
     {
         exit(-1);
     }
+
+
+
+
+
 }
