@@ -1,4 +1,2 @@
-1. Dhaka            Location-> Shayamoli       House_Rent-> USD 450
-2. Saskatchewan, Canada      Location-> Saskatoon         House_Rent> USD 2500
-3. New York, USA            Location-> New York              House_Rent-> USD 3800
-12. Barishal         Location-> Chahutpur       House_Rent-> USD 120
+2. Dhaka            Location-> Gulshan         Area_Sq-ft-> 1600         Price-> USD 25000
+1. Ontario, Canada           Location-> Toronto           House_Rent-> USD 4500

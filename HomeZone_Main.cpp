@@ -745,7 +745,7 @@ public:
 
 int main()
 {
-    //calling_loging_class();
+    calling_loging_class();
 
     system("cls");
 
