@@ -1,3 +1,5 @@
-3. New York, USA            Location-> New York              Area_Sq-ft-> 1100         Price-> USD 380000
-2. Saskatchewan, Canada      Location-> Saskatoon         House_Rent> USD 2500
-5. Khulna           Location-> Gallamari       Area_Sq-ft-> 1300         Price-> USD 14000
+4. Khulna           Location-> Shiromoni       House_Rent-> USD 90
+6. Khulna           Location-> KUET            House_Rent-> USD 190
+3. New York, USA            Location-> New York              House_Rent-> USD 3810
+2. Saskatchewan, Canada      Location-> Saskatoon         House_Rent> USD 2510
+22. Mymensingh       Location-> Dapunia        House_Rent->  USD 105

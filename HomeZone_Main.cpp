@@ -4,7 +4,7 @@ Name :: Plaban Das
 Department :: CSE
 */
 
-////////////////////////////////////////////////////// Overview Video Link :: (( https://youtu.be/zoeeQwyyk_g  ))
+////////////////////////////////////////////////////// Overview Video Link :: (( https://youtu.be/CUcQ7og__ZY  ))
 
 #include <bits/stdc++.h>
 #include <string.h>
@@ -576,13 +576,17 @@ inline void function_for_some()
 
     if(flag==1)
     {
-        Buying_Land land;
-        land.choose_country_Buying_Land();
+        DashBoard *root;               //RTTI
+        Buying_Land land_obj;
+        Buying_Land *land = dynamic_cast<Buying_Land*>(&land_obj);
+        land->choose_country_Buying_Land();
     }
     else if(flag == 2)
     {
-        House_Rent land;
-        land.choose_country_House_Rent();
+        DashBoard *root;
+        House_Rent rent_obj;
+        House_Rent *rent = dynamic_cast<House_Rent*>(&rent_obj);
+        rent->choose_country_House_Rent();
     }
     else
     {
@@ -607,7 +611,7 @@ class Make_invoice
 //    char line[800];
 //    int N=1000;
 
-    int product_id;
+    int product_id=0;
     char line[800];
     int N;
 
@@ -665,19 +669,21 @@ public:
 
     void make_final_card_list()
     {
+        product_id = 0;
+
 
         ifstream out_card;
         out_card.open("card_view.txt");
         cout << endl;
         while(out_card)
         {
-            product_id++;
             out_card.getline(line,N);
 
             int k = (int)line[0] ;
 
             if( k != 0)     // Last item filtered
             {
+                product_id++;
                 cout<< "Product ID: "<<product_id<< " Item :: "<< line << endl;
             }
 
@@ -753,6 +759,7 @@ public:
         for (auto it = multi_st.begin(); it != multi_st.end(); it++)
         {
             int temp = *it ;
+            //cout << temp << endl;
 
             string str;
 
@@ -764,7 +771,7 @@ public:
                 out_card.getline(line,N);
 
                 string got_line = line;
-                if (got_line.find(to_string(temp)) != std::string::npos)
+                if (got_line.find("USD "+to_string(temp)) != std::string::npos)
                 {
                     counter ++;
                     cout << "Product Details: "<< counter << " -> "<< line << endl;

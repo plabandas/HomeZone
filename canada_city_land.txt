@@ -2,6 +2,6 @@
 *************************Land Buying*************************
 ************Three Cities Of Canada in Our Service************
 
-1. Ontario, Canada           Location-> Toronto           Area_Sq-ft-> 1500         Price-> USD 450000
-2. Saskatchewan, Canada      Location-> Saskatoon         Area_Sq-ft-> 1600         Price-> USD 250000
-3. Quebec, Canada            Location-> Montreal          Area_Sq-ft-> 1100         Price-> USD 350000
+1. Ontario, Canada           Location-> Toronto           Area_Sq-ft-> 1500         Price-> USD 450400
+2. Saskatchewan, Canada      Location-> Saskatoon         Area_Sq-ft-> 1600         Price-> USD 250500
+3. Quebec, Canada            Location-> Montreal          Area_Sq-ft-> 1100         Price-> USD 350600

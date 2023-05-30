@@ -2,6 +2,6 @@
 *************************Land Buying**********************
 ************Three Cities Of USA in Our Service************
 
-1. Wisconsin, USA           Location-> Green Bay             Area_Sq-ft-> 1500         Price-> USD 440000
-2. California, USA          Location-> San Francisco         Area_Sq-ft-> 1600         Price-> USD 240000
-3. New York, USA            Location-> New York              Area_Sq-ft-> 1100         Price-> USD 380000
+1. Wisconsin, USA           Location-> Green Bay             Area_Sq-ft-> 1500         Price-> USD 440100
+2. California, USA          Location-> San Francisco         Area_Sq-ft-> 1600         Price-> USD 240200
+3. New York, USA            Location-> New York              Area_Sq-ft-> 1100         Price-> USD 380300
