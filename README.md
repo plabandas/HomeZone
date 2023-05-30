@@ -49,8 +49,15 @@ This app will easy our boring life by finding house in rent and at the same time
   **Total Cart Items will be showed
   **Total Market Value of All Cart Items will be showed
 ```
+6.. Operation On Cart Items 
 
-6.. Choosing Final Choiced Home/Land 
+```bash
+Here you can sort items according to their price !!
+
+  # Sort the price in ascending order
+```
+
+7.. Choosing Final Choiced Home/Land 
 
 ```bash
 Here We will choice our Final destination !!
@@ -59,7 +66,7 @@ Here We will choice our Final destination !!
   # User Name and Invoice will be generated in console
 ```
 
-7.. The Invoice is Ready
+8.. The Invoice is Ready
 ```bash
   Here The Text Document will be Ready !!
 
@@ -81,8 +88,7 @@ Here We will choice our Final destination !!
 ![photo](https://user-images.githubusercontent.com/72873595/241415653-f52bb12b-440f-4610-b4a5-67364808c83a.png)
 
 ![photo](https://user-images.githubusercontent.com/72873595/241415659-7686e099-edd9-43df-83d1-9de3bf90cad3.png)
-
-![photo](https://user-images.githubusercontent.com/72873595/241749465-0e119014-5583-40ca-8b2b-1b0e25193374.png)
+ 
 
 ![photo](https://user-images.githubusercontent.com/72873595/241415701-9124c482-45cc-401c-a131-e0ee2946865d.png)
 
@@ -94,9 +100,7 @@ Here We will choice our Final destination !!
 
 ![photo](https://user-images.githubusercontent.com/72873595/241415810-2935f07b-ee9d-499f-a08c-df3762ff741e.png)
 
-![photo](https://user-images.githubusercontent.com/72873595/241415832-7a6f08f0-88e9-451d-9887-8eab4ca96a87.png)
-
-![photo](https://user-images.githubusercontent.com/72873595/241415844-c15fc24c-b095-4502-ba85-7a4e3968258a.png)
+![photo](https://user-images.githubusercontent.com/72873595/241415832-7a6f08f0-88e9-451d-9887-8eab4ca96a87.png) 
 
 ![photo](https://user-images.githubusercontent.com/72873595/241415849-649d35db-2cc2-4093-8d81-a4a0a0e467d7.png) 
 
@@ -115,11 +119,7 @@ Here We will choice our Final destination !!
 
 
 # Project Overview With Video 
-Video Overview Link :: https://youtu.be/zoeeQwyyk_g
-
-Video Details :: (00:00 to 02:42)  Short Overview
-
-Video Details :: (02:42 to 09:13)  Details Overview
+Video Overview Link :: https://youtu.be/zoeeQwyyk_g 
 
 # Contact
 

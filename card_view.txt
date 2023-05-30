@@ -1,2 +1,3 @@
-2. Dhaka            Location-> Gulshan         Area_Sq-ft-> 1600         Price-> USD 25000
-1. Ontario, Canada           Location-> Toronto           House_Rent-> USD 4500
+3. New York, USA            Location-> New York              Area_Sq-ft-> 1100         Price-> USD 380000
+2. Saskatchewan, Canada      Location-> Saskatoon         House_Rent> USD 2500
+5. Khulna           Location-> Gallamari       Area_Sq-ft-> 1300         Price-> USD 14000

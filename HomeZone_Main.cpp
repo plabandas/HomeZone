@@ -15,6 +15,9 @@ bool state_of_cart=true;
 string Name_customer = "";
 inline void function_for_some();
 
+multiset<int> multi_st;
+
+
 class Card_view_Adding
 {
 private:
@@ -660,7 +663,7 @@ public:
     }
 
 
-    void make_invoice()
+    void make_final_card_list()
     {
 
         ifstream out_card;
@@ -683,6 +686,9 @@ public:
         }
         cout << endl;
         out_card.close();
+    }
+    void callint_make_invoice_ready()
+    {
         cout << "Select Your Final Item **With Product ID** :: ";
         int flag;
         cin >> flag;
@@ -709,6 +715,9 @@ void calculation_of_items(R a)
 
 class cart_operation
 {
+    char line[800];
+    int N = 1000;
+
 public:
     void calculate_total_cost()
     {
@@ -728,19 +737,61 @@ public:
                 flag2 = false;
                 int val = stoi(str);
 
+                multi_st.insert(val);
+
                 calculation_of_dolars(val); // using template
                 calculation_of_items(counter); // using template
             }
 
         }
+        input.close();
     }
     void sort_elements_with_money()
     {
+        int counter =0;
+
+        for (auto it = multi_st.begin(); it != multi_st.end(); it++)
+        {
+            int temp = *it ;
+
+            string str;
+
+            ifstream out_card;
+            bool flag2 = false;
+            out_card.open("card_view.txt");
+            while(out_card)
+            {
+                out_card.getline(line,N);
+
+                string got_line = line;
+                if (got_line.find(to_string(temp)) != std::string::npos)
+                {
+                    counter ++;
+                    cout << "Product Details: "<< counter << " -> "<< line << endl;
+                }
+
+            }
+            out_card.close();
+        }
+    }
+    int get_total_cost()
+    {
+        return total_cost_dollars;
+    }
+    int get_totoal_count()
+    {
+        return items_count;
     }
 
+    friend ostream& operator<<(ostream &out,cart_operation &ob);
 };
 
 
+ostream& operator << (ostream &out, cart_operation &ob)
+{
+    cout << endl << "Your Total Items On Cart : " << ob.get_totoal_count() << endl;
+    cout << "Your Value Of Those Items In USD : " << ob.get_total_cost() << " Dollars...." << endl;
+}
 
 
 int main()
@@ -749,29 +800,59 @@ int main()
 
     system("cls");
 
-    cout << "Do you want to watch final cart items ? (1 for YES , 0 for NO) :: " ;
+    cout << "Do you want to watch final cart items ? (1 for YES , 0 for Exit Program) :: " ;
 
-    cart_operation cart_operation;
-    cart_operation.calculate_total_cost();
+    cart_operation object;
+    object.calculate_total_cost();
 
     int flag;
     cin >> flag;
     if(flag == 1)
     {
-        cout << endl << "Your Total Items On Cart : " << items_count << endl;
-        cout << "Your Value Of Those Items In USD : " << total_cost_dollars << " Dollars...." << endl;
-
+        cout << object;      // Operator Overloading
 
         Make_invoice invoice(0,1000);         //constructor used
-        invoice.make_invoice();
+        invoice.make_final_card_list();
+
+        cout << "Do you want items Sorted with Price ? (1 for yes, 0 for NO) :: ";
+        int t;
+        cin >> t;
+        if(t==1)
+        {
+            cout << endl;
+            object.sort_elements_with_money();
+            cout << endl;
+            cout << "Want Back to main Cart? (1 for yes, 0 for Exit Program) :: ";
+
+            int flag;
+            cin >> flag;
+            if(flag == 1)
+            {
+                system("cls");
+                cout << object;
+
+                Make_invoice invoice(0,1000);         //constructor used
+                invoice.make_final_card_list();
+
+                invoice.callint_make_invoice_ready();
+            }
+            else
+            {
+                exit(-1);
+            }
+
+
+
+        }
+        else
+        {
+            system("cls");
+            cout << object;
+
+            Make_invoice invoice(0,1000);
+            invoice.make_final_card_list();
+            invoice.callint_make_invoice_ready();
+        }
+
     }
-    else
-    {
-        exit(-1);
-    }
-
-
-
-
-
 }
